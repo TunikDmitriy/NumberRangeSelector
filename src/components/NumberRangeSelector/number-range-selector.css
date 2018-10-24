@@ -1,0 +1,72 @@
+.scale-picker {
+  position: relative;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  width: 305px;
+  height: 60px;
+  border: solid 2px #fff;
+  border-radius: 10px;
+  font-family: sans-serif;
+  background-color: #d9dadf; }
+  .scale-picker .scale-picker_label {
+    margin: 0 10px;
+    font-size: 18px;
+    color: #696a6f; }
+  .scale-picker .scale-picker_addon {
+    margin-left: 20px;
+    font-size: 22px;
+    color: #696a6f; }
+  .scale-picker .scale-picker_control {
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 0;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    font-size: 22px;
+    text-align: right;
+    color: #000;
+    background-color: transparent; }
+  .scale-picker .scale-picker_rail-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 0 5px;
+    width: 100%; }
+  .scale-picker .scale-picker_rail {
+    position: relative;
+    box-sizing: border-box;
+    margin: 0 25px; }
+  .scale-picker .scale-picker_slider {
+    position: absolute;
+    width: 0;
+    height: 0;
+    cursor: pointer; }
+    .scale-picker .scale-picker_slider .scale-picker_slider_pointer-curve,
+    .scale-picker .scale-picker_slider .scale-picker_slider_pointer-circle {
+      position: absolute;
+      top: -11px;
+      left: -15px;
+      z-index: 1;
+      transition: all .2s ease-in-out;
+      cursor: pointer; }
+    .scale-picker .scale-picker_slider .scale-picker_slider_pointer-curve {
+      transition-delay: .06s; }
+    .scale-picker .scale-picker_slider .scale-picker_slider_svg-line {
+      stroke: #d9dadf;
+      stroke-width: 2px; }
+    .scale-picker .scale-picker_slider .scale-picker_slider_svg-curve {
+      stroke: #fff;
+      fill: #d9dadf;
+      stroke-width: 2px; }
+    .scale-picker .scale-picker_slider .scale-picker_slider_svg-circle {
+      fill: #f27a0a; }
+    .scale-picker .scale-picker_slider:hover .scale-picker_slider_pointer-curve {
+      transform: scale(1.25); }
+    .scale-picker .scale-picker_slider:hover .scale-picker_slider_pointer-circle {
+      transform: scale(1.35); }
+
+/*# sourceMappingURL=number-range-selector.css.map */
